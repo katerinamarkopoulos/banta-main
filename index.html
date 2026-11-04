@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kattcaféet Morrhår – fika med katter i Göteborg</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/typsnitt.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/lodash.js"></script>
+  <script src="js/moment-with-locales.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <img src="bilder/logga.png" class="logo">
+        <span class="brand-name">Morrhår</span>
+      </div>
+      <div class="nav-links">
+        <a href="#katter">Katterna</a>
+        <a href="#meny">Meny</a>
+        <a href="#besok">Besök oss</a>
+        <div class="btn-boka" onclick="document.getElementById('boka').scrollIntoView()">Boka bord</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero" style="background-image:url('bilder/hero-kattcafe.jpg')">
+    <div class="container">
+      <h1 class="animate__animated animate__fadeInDown">Fika med sex nya vänner</h1>
+      <p class="hero-text">Kaffe, kardemummabullar och spinnande katter mitt i Göteborg. Alla våra katter kommer från Kattstugans omplacering – och några av dem söker fortfarande ett hem.</p>
+      <div class="btn-hero" onclick="document.getElementById('boka').scrollIntoView()">Boka bord <i class="fa-solid fa-paw"></i></div>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h4 class="kicker">Om oss</h4>
+        <h2>Ett café där katterna bestämmer</h2>
+        <p class="lead-grey">Morrhår öppnade 2021 i en gammal sybehörsaffär på Linnégatan. Katterna har egna hyllor, gångar och gömställen, och du får klappa den som vill bli klappad. Vi bakar allt själva varje morgon.</p>
+        <p class="lead-grey">Barn under sju år är välkomna i sällskap med vuxen. Vi har en allergivänlig avdelning utan katter längst in i lokalen.</p>
+        <a href="#" class="read-more">Läs mer</a>
+      </div>
+      <div class="col-md-6">
+        <img src="bilder/interior.jpg" class="img-interior">
+      </div>
+    </div>
+  </div>
+
+  <div class="section-katter" id="katter">
+    <div class="container">
+      <h4 class="kicker">Katterna</h4>
+      <h2>Möt gänget</h2>
+      <div class="row" id="kattlista">
+        <div class="col-6 col-md-4 katt"><img src="bilder/katt-sixten.jpg" class="katt-bild"><h5>Sixten</h5><p>4 år. Äter helst din kanelbulle.</p><a href="#" class="read-more">Läs mer</a></div>
+        <div class="col-6 col-md-4 katt"><img src="bilder/katt-majken.jpg" class="katt-bild"><h5>Majken</h5><p>2 år. Sover i fönstret mellan 14 och 16.</p><a href="#" class="read-more">Läs mer</a></div>
+        <div class="col-6 col-md-4 katt"><img src="bilder/katt-doris.jpg" class="katt-bild"><h5>Doris</h5><p>9 år. Caféets äldsta och lugnaste.</p><a href="#" class="read-more">Läs mer</a></div>
+        <div class="col-6 col-md-4 katt"><img src="bilder/katt-pelle.jpg" class="katt-bild"><h5>Pelle</h5><p>1 år. Söker hem! Gillar snören.</p><a href="#" class="read-more">Läs mer</a></div>
+        <div class="col-6 col-md-4 katt"><img src="bilder/katt-gullan.jpg" class="katt-bild"><h5>Gullan</h5><p>6 år. Hälsar på alla vid dörren.</p><a href="#" class="read-more">Läs mer</a></div>
+        <div class="col-6 col-md-4 katt"><img src="bilder/katt-kurre.jpg" class="katt-bild"><h5>Kurre</h5><p>3 år. Söker hem tillsammans med Gullan.</p><a href="#" class="read-more">Läs mer</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section" id="meny">
+    <h4 class="kicker">Meny</h4>
+    <h2>Dagens fika</h2>
+    <div class="meny-tabs">
+      <div class="tab active" data-tab="dryck">Dryck</div>
+      <div class="tab" data-tab="fika">Fika</div>
+      <div class="tab" data-tab="lunch">Lunch</div>
+    </div>
+    <div class="meny-panel" id="dryck">
+      <div class="meny-rad"><span>Bryggkaffe, påtår ingår</span><span>35 kr</span></div>
+      <div class="meny-rad"><span>Cappuccino</span><span>45 kr</span></div>
+      <div class="meny-rad"><span>Kattlatte med mjölkskumskatt</span><span>52 kr</span></div>
+      <div class="meny-rad"><span>Te från Morrhårs egen blandning</span><span>38 kr</span></div>
+    </div>
+    <div class="meny-panel" id="fika" style="display:none">
+      <div class="meny-rad"><span>Kardemummabulle</span><span>38 kr</span></div>
+      <div class="meny-rad"><span>Kanelbulle</span><span>35 kr</span></div>
+      <div class="meny-rad"><span>Morotskaka</span><span>55 kr</span></div>
+      <div class="meny-rad"><span>Havrekaka (vegansk)</span><span>25 kr</span></div>
+    </div>
+    <div class="meny-panel" id="lunch" style="display:none">
+      <div class="meny-rad"><span>Dagens soppa med bröd</span><span>95 kr</span></div>
+      <div class="meny-rad"><span>Toast med ost och skinka</span><span>79 kr</span></div>
+      <div class="meny-rad"><span>Paj med sallad</span><span>110 kr</span></div>
+    </div>
+    <p class="quote">”Bästa kardemummabullen i stan – och Doris höll med.”</p>
+  </div>
+
+  <div class="section-besok" id="besok">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="kicker">Öppettider</h4>
+          <p class="idag"><i class="fa-regular fa-clock"></i> <span id="idag"></span></p>
+          <p class="small-grey">Mån–fre 10–18<br>Lör–sön 11–17</p>
+        </div>
+        <div class="col-md-4">
+          <h4 class="kicker">Hitta hit</h4>
+          <p class="small-grey"><i class="fa-solid fa-location-dot"></i> Linnégatan 21, Göteborg<br>Spårvagn 1 eller 6 till Järntorget</p>
+        </div>
+        <div class="col-md-4" id="boka">
+          <h4 class="kicker">Boka bord</h4>
+          <input type="text" placeholder="Namn" class="falt">
+          <input type="text" placeholder="Datum" class="falt">
+          <input type="text" placeholder="Antal personer" class="falt">
+          <div class="btn-skicka" onclick="skicka()">Skicka</div>
+          <p class="tack" style="display:none">Tack! Vi hör av oss inom en dag.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <p>© Kattcaféet Morrhår · <a href="#"><i class="fa-brands fa-instagram"></i></a> <a href="#"><i class="fa-brands fa-facebook"></i></a></p>
+      <p class="footer-small">Ett påhittat café, gjort som övningsexempel.</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

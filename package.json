@@ -1,0 +1,14 @@
+{
+  "name": "kattcafe-morrhar",
+  "version": "1.0.0",
+  "description": "Webbplats för Kattcaféet Morrhår – övningsexempel i hållbar webb",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1"
+  }
+}
